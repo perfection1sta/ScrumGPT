@@ -29,9 +29,13 @@ with col2:
     st.subheader(":sparkles: *beep-boop-beep* :robot_face:")
 
 # get environment path variable OPENAI_API_KEY
-openai.api_key  = st.sidebar.text_input('Your API Key')
-PINECONE_API_KEY = st.sidebar.text_input('Your Pine Key')
-PINECONE_API_ENV = st.sidebar.text_input('Your Pine env')
+# openai.api_key  = st.sidebar.text_input('Your API Key')
+# PINECONE_API_KEY = st.sidebar.text_input('Your Pine Key')
+# PINECONE_API_ENV = st.sidebar.text_input('Your Pine env')
+OPENAI_API_KEY = st.sidebar.text_input('Your API Key')
+openai.api_key = OPENAI_API_KEY
+PINECONE_API_KEY = PINECONE_API_KEY
+PINECONE_API_ENV = 'us-central1-gcp'
 
 # Initialize Pinecone vectorstore
 
