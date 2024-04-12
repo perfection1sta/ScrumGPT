@@ -21,11 +21,11 @@ from langchain.document_loaders import UnstructuredFileLoader
 
 # GUI Display
 
-st.set_page_config(page_title="KudasAI",page_icon="fox_face",layout="wide",initial_sidebar_state="expanded",menu_items={'Get help':'mailto:akshay@kudasai.io'})
+st.set_page_config(page_title="ScrumGPT",page_icon="fox_face",layout="wide",initial_sidebar_state="expanded")
 col1, col2, col3 = st.columns(3)
 
 with col2:
-    st.header(":fox_face: KudasAI :tm:")
+    st.header(":fox_face: ScrumGPT :tm:")
     st.subheader(":sparkles: *beep-boop-beep* :robot_face:")
 
 # get environment path variable OPENAI_API_KEY
@@ -88,7 +88,7 @@ def convertMillis(start_ms):
         btn_txt += f'{minutes:02d}:{seconds:02d}'
     return btn_txt
 
-status = st.markdown("**Kai Engine Loaded**")
+status = st.markdown("**ScrumGPT Engine Loaded**")
 
 # upload audio file:
 audio_file = st.file_uploader("Upload Audio", type=["wav", "mp3", "m4a"])
